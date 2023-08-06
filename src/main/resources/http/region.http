@@ -1,0 +1,29 @@
+### create region
+POST http://localhost:8081/api/v1/region
+Content-Type: application/json
+
+{
+  "orderNumber": "4",
+  "nameUz": "Jizzax",
+  "nameRu": "Джизак",
+  "nameEn": "Djizak"
+}
+
+
+### create region
+PUT http://localhost:8081/api/v1/region/2
+Content-Type: application/json
+
+{
+  "orderNumber": "2",
+  "nameUz": "Nukus",
+  "nameRu": "Нукус",
+  "nameEn": "Nukus"
+}
+
+### delete region
+DELETE http://localhost:8081/api/v1/region/1
+
+
+### Lan list
+GET http://localhost:8081/api/v1/region/lan?lan=en

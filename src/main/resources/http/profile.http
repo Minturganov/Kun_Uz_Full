@@ -1,0 +1,33 @@
+  ### create profile
+POST http://localhost:8081/api/v1/profile
+Content-Type: application/json
+
+{
+  "name": "Koke",
+  "surname": "Make",
+  "email": "madiev@gmail.com",
+  "phone": "159456753",
+  "password": "make123",
+  "role": "ROLE_ADMIN "
+}
+
+### update profile
+PUT localhost:8081/api/v1/profile/1
+Content-Type: application/json
+
+{
+  "name": "VAli",
+  "surname": "VAliev",
+  "email": "valiev@gmail.com",
+  "phone": "8520"
+}
+
+
+### update profile detail
+PUT localhost:8081/api/v1/profile/detail/1
+Content-Type: application/json
+
+{
+  "name": "Alijon",
+  "surname": "Aliev"
+}
